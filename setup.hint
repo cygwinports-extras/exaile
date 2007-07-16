@@ -1,0 +1,9 @@
+category: Audio Gnome
+requires: cygwin glib2 gstreamer010-plugins-base gstreamer010-plugins-good gstreamer010-plugins-oss gtk2-x11 libX11_6 python python-cddb python-dbus python-egg python-gobject2 python-gpod python-gstreamer010 python-gtk2 python-gtkhtml2 python-mutagen python-sexy
+sdesc: "GTK+ music player similar to AmaroK"
+ldesc: "Exaile is a music player aiming to be similar to KDE's Amarok, 
+but for GTK+ and written in Python. It incorporates many of the cool 
+things from Amarok (and other media players) like automatic fetching of 
+album art, handling of large libraries, lyrics fetching, artist/album 
+information via Wikipedia, Last.fm submission support, and optional iPod 
+support via a plugin."
