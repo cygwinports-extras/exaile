@@ -8,35 +8,34 @@ via Wikipedia, Last.fm submission support, and optional iPod support via
 a plugin.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.12-2
+  cygwin-1.5.25-7
+  glib2-2.14.4-1
   gstreamer010-plugins-base
   gstreamer010-plugins-good
   gstreamer010-plugins-oss
-  gtk2-x11-2.10.13-1
-  libX11_6-1.1.1-1
+  gtk2-x11-2.12.3-1
+  libX11_6-1.1.3-1
   python-2.5.1-3
   python-cddb-1.4-1
-  python-dbus-0.81.1-1
-  python-egg-2.14.3-1
-  python-gobject2-2.12.3-2
-  python-gpod-0.5.2-1
-  python-gstreamer010-0.10.7.1-1
-  python-gtk2-2.10.6-1
-  python-gtkhtml2-2.14.3-1
-  python-mutagen-1.11-1
+  python-dbus-0.82.3-1
+  python-egg-2.19.1-1
+  python-gobject2-2.14.0-1
+  python-gpod-0.6.0-1
+  python-gstreamer010-0.10.9-1
+  python-gtk2-2.12.0-1
+  python-mutagen-1.13-1
   python-sexy-0.1.9-1
 
 Build requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
   pkg-config-0.21-1
   python-2.5.1-3
-  python-gtk2-devel-2.10.6-1
+  python-gtk2-devel-2.12.0-1
   sed-4.1.5-2
 
 Canonical website:
@@ -48,15 +47,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack exaile-0.2.10-X-src.tar.bz2
+  unpack exaile-0.2.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./exaile-0.2.10-X.cygport all
+  cygport ./exaile-0.2.11-X.cygport all
 
 This will create:
-  /usr/src/exaile-0.2.10-X-src.tar.bz2
-  /usr/src/exaile-0.2.10-X.tar.bz2
+  /usr/src/exaile-0.2.11-X-src.tar.bz2
+  /usr/src/exaile-0.2.11-X.tar.bz2
 
 -------------------------------------------
 
@@ -64,18 +63,154 @@ Files included in the binary package:
 
   /etc/postinstall/exaile.sh
   /usr/bin/exaile
+  /usr/lib/exaile/exaile.py
+  /usr/lib/exaile/lib/__init__.py
+  /usr/lib/exaile/lib/__init__.pyc
+  /usr/lib/exaile/lib/__init__.pyo
+  /usr/lib/exaile/lib/wmainfo.py
+  /usr/lib/exaile/lib/wmainfo.pyc
+  /usr/lib/exaile/lib/wmainfo.pyo
   /usr/lib/exaile/mmkeys.dll
+  /usr/lib/exaile/xl/__init__.py
+  /usr/lib/exaile/xl/__init__.pyc
+  /usr/lib/exaile/xl/__init__.pyo
+  /usr/lib/exaile/xl/advancededitor.py
+  /usr/lib/exaile/xl/advancededitor.pyc
+  /usr/lib/exaile/xl/advancededitor.pyo
+  /usr/lib/exaile/xl/audioscrobbler.py
+  /usr/lib/exaile/xl/audioscrobbler.pyc
+  /usr/lib/exaile/xl/audioscrobbler.pyo
+  /usr/lib/exaile/xl/burn.py
+  /usr/lib/exaile/xl/burn.pyc
+  /usr/lib/exaile/xl/burn.pyo
+  /usr/lib/exaile/xl/cd_import.py
+  /usr/lib/exaile/xl/cd_import.pyc
+  /usr/lib/exaile/xl/cd_import.pyo
+  /usr/lib/exaile/xl/common.py
+  /usr/lib/exaile/xl/common.pyc
+  /usr/lib/exaile/xl/common.pyo
+  /usr/lib/exaile/xl/config.py
+  /usr/lib/exaile/xl/config.pyc
+  /usr/lib/exaile/xl/config.pyo
+  /usr/lib/exaile/xl/config_convert.py
+  /usr/lib/exaile/xl/config_convert.pyc
+  /usr/lib/exaile/xl/config_convert.pyo
+  /usr/lib/exaile/xl/covers.py
+  /usr/lib/exaile/xl/covers.pyc
+  /usr/lib/exaile/xl/covers.pyo
+  /usr/lib/exaile/xl/db.py
+  /usr/lib/exaile/xl/db.pyc
+  /usr/lib/exaile/xl/db.pyo
+  /usr/lib/exaile/xl/dbusinterface.py
+  /usr/lib/exaile/xl/dbusinterface.pyc
+  /usr/lib/exaile/xl/dbusinterface.pyo
+  /usr/lib/exaile/xl/editor.py
+  /usr/lib/exaile/xl/editor.pyc
+  /usr/lib/exaile/xl/editor.pyo
+  /usr/lib/exaile/xl/equalizer.py
+  /usr/lib/exaile/xl/equalizer.pyc
+  /usr/lib/exaile/xl/equalizer.pyo
+  /usr/lib/exaile/xl/filtergui.py
+  /usr/lib/exaile/xl/filtergui.pyc
+  /usr/lib/exaile/xl/filtergui.pyo
+  /usr/lib/exaile/xl/gui/__init__.py
+  /usr/lib/exaile/xl/gui/__init__.pyc
+  /usr/lib/exaile/xl/gui/__init__.pyo
+  /usr/lib/exaile/xl/gui/editor.py
+  /usr/lib/exaile/xl/gui/editor.pyc
+  /usr/lib/exaile/xl/gui/editor.pyo
+  /usr/lib/exaile/xl/gui/information.py
+  /usr/lib/exaile/xl/gui/information.pyc
+  /usr/lib/exaile/xl/gui/information.pyo
+  /usr/lib/exaile/xl/gui/library.py
+  /usr/lib/exaile/xl/gui/library.pyc
+  /usr/lib/exaile/xl/gui/library.pyo
+  /usr/lib/exaile/xl/gui/main.py
+  /usr/lib/exaile/xl/gui/main.pyc
+  /usr/lib/exaile/xl/gui/main.pyo
+  /usr/lib/exaile/xl/gui/playlist.py
+  /usr/lib/exaile/xl/gui/playlist.pyc
+  /usr/lib/exaile/xl/gui/playlist.pyo
+  /usr/lib/exaile/xl/library.py
+  /usr/lib/exaile/xl/library.pyc
+  /usr/lib/exaile/xl/library.pyo
+  /usr/lib/exaile/xl/media/__init__.py
+  /usr/lib/exaile/xl/media/__init__.pyc
+  /usr/lib/exaile/xl/media/__init__.pyo
+  /usr/lib/exaile/xl/media/flac.py
+  /usr/lib/exaile/xl/media/flac.pyc
+  /usr/lib/exaile/xl/media/flac.pyo
+  /usr/lib/exaile/xl/media/mp3.py
+  /usr/lib/exaile/xl/media/mp3.pyc
+  /usr/lib/exaile/xl/media/mp3.pyo
+  /usr/lib/exaile/xl/media/mp4.py
+  /usr/lib/exaile/xl/media/mp4.pyc
+  /usr/lib/exaile/xl/media/mp4.pyo
+  /usr/lib/exaile/xl/media/mpc.py
+  /usr/lib/exaile/xl/media/mpc.pyc
+  /usr/lib/exaile/xl/media/mpc.pyo
+  /usr/lib/exaile/xl/media/ogg.py
+  /usr/lib/exaile/xl/media/ogg.pyc
+  /usr/lib/exaile/xl/media/ogg.pyo
+  /usr/lib/exaile/xl/media/tta.py
+  /usr/lib/exaile/xl/media/tta.pyc
+  /usr/lib/exaile/xl/media/tta.pyo
+  /usr/lib/exaile/xl/media/wav.py
+  /usr/lib/exaile/xl/media/wav.pyc
+  /usr/lib/exaile/xl/media/wav.pyo
+  /usr/lib/exaile/xl/media/wma.py
+  /usr/lib/exaile/xl/media/wma.pyc
+  /usr/lib/exaile/xl/media/wma.pyo
+  /usr/lib/exaile/xl/media/wv.py
+  /usr/lib/exaile/xl/media/wv.pyc
+  /usr/lib/exaile/xl/media/wv.pyo
+  /usr/lib/exaile/xl/mozembed.py
+  /usr/lib/exaile/xl/mozembed.pyc
+  /usr/lib/exaile/xl/mozembed.pyo
+  /usr/lib/exaile/xl/panels/__init__.py
+  /usr/lib/exaile/xl/panels/__init__.pyc
+  /usr/lib/exaile/xl/panels/__init__.pyo
+  /usr/lib/exaile/xl/panels/collection.py
+  /usr/lib/exaile/xl/panels/collection.pyc
+  /usr/lib/exaile/xl/panels/collection.pyo
+  /usr/lib/exaile/xl/panels/device.py
+  /usr/lib/exaile/xl/panels/device.pyc
+  /usr/lib/exaile/xl/panels/device.pyo
+  /usr/lib/exaile/xl/panels/files.py
+  /usr/lib/exaile/xl/panels/files.pyc
+  /usr/lib/exaile/xl/panels/files.pyo
+  /usr/lib/exaile/xl/panels/playlists.py
+  /usr/lib/exaile/xl/panels/playlists.pyc
+  /usr/lib/exaile/xl/panels/playlists.pyo
+  /usr/lib/exaile/xl/panels/radio.py
+  /usr/lib/exaile/xl/panels/radio.pyc
+  /usr/lib/exaile/xl/panels/radio.pyo
+  /usr/lib/exaile/xl/path.py
+  /usr/lib/exaile/xl/path.pyc
+  /usr/lib/exaile/xl/path.pyo
+  /usr/lib/exaile/xl/player.py
+  /usr/lib/exaile/xl/player.pyc
+  /usr/lib/exaile/xl/player.pyo
+  /usr/lib/exaile/xl/playlist.py
+  /usr/lib/exaile/xl/playlist.pyc
+  /usr/lib/exaile/xl/playlist.pyo
+  /usr/lib/exaile/xl/plugins/__init__.py
+  /usr/lib/exaile/xl/plugins/gui.py
+  /usr/lib/exaile/xl/plugins/manager.py
+  /usr/lib/exaile/xl/prefs.py
+  /usr/lib/exaile/xl/prefs.pyc
+  /usr/lib/exaile/xl/prefs.pyo
+  /usr/lib/exaile/xl/xlmisc.py
+  /usr/lib/exaile/xl/xlmisc.pyc
+  /usr/lib/exaile/xl/xlmisc.pyo
   /usr/share/applications/exaile.desktop
-  /usr/share/doc/Cygwin/exaile-0.2.10.README
-  /usr/share/doc/exaile-0.2.10/COPYING
-  /usr/share/doc/exaile-0.2.10/ChangeLog
-  /usr/share/doc/exaile-0.2.10/LICENSE.txt
-  /usr/share/doc/exaile-0.2.10/TODO
+  /usr/share/doc/exaile-0.2.11/COPYING
+  /usr/share/doc/exaile-0.2.11/ChangeLog
+  /usr/share/doc/exaile-0.2.11/LICENSE.txt
+  /usr/share/doc/exaile-0.2.11/TODO
+  /usr/share/exaile/data/settings_meta.ini
   /usr/share/exaile/equalizer.ini
   /usr/share/exaile/exaile.glade
-  /usr/share/exaile/exaile.py
-  /usr/share/exaile/exaile.pyc
-  /usr/share/exaile/exaile.pyo
   /usr/share/exaile/images/artist.png
   /usr/share/exaile/images/close.png
   /usr/share/exaile/images/default_theme/add.png
@@ -108,105 +243,13 @@ Files included in the binary package:
   /usr/share/exaile/images/star.png
   /usr/share/exaile/images/track.png
   /usr/share/exaile/images/trayicon.png
-  /usr/share/exaile/lib/__init__.py
-  /usr/share/exaile/lib/__init__.pyc
-  /usr/share/exaile/lib/__init__.pyo
-  /usr/share/exaile/lib/wmainfo.py
-  /usr/share/exaile/lib/wmainfo.pyc
-  /usr/share/exaile/lib/wmainfo.pyo
-  /usr/share/exaile/plugins/__init__.py
-  /usr/share/exaile/plugins/__init__.pyc
-  /usr/share/exaile/plugins/__init__.pyo
-  /usr/share/exaile/plugins/gui.py
-  /usr/share/exaile/plugins/gui.pyc
-  /usr/share/exaile/plugins/gui.pyo
-  /usr/share/exaile/plugins/manager.py
-  /usr/share/exaile/plugins/manager.pyc
-  /usr/share/exaile/plugins/manager.pyo
-  /usr/share/exaile/plugins/plugins.glade
   /usr/share/exaile/sql/changes0001.sql
   /usr/share/exaile/sql/changes0002.sql
   /usr/share/exaile/sql/db.sql
-  /usr/share/exaile/xl/__init__.py
-  /usr/share/exaile/xl/__init__.pyc
-  /usr/share/exaile/xl/__init__.pyo
-  /usr/share/exaile/xl/audioscrobbler.py
-  /usr/share/exaile/xl/audioscrobbler.pyc
-  /usr/share/exaile/xl/audioscrobbler.pyo
-  /usr/share/exaile/xl/common.py
-  /usr/share/exaile/xl/common.pyc
-  /usr/share/exaile/xl/common.pyo
-  /usr/share/exaile/xl/config.py
-  /usr/share/exaile/xl/config.pyc
-  /usr/share/exaile/xl/config.pyo
-  /usr/share/exaile/xl/config_convert.py
-  /usr/share/exaile/xl/config_convert.pyc
-  /usr/share/exaile/xl/config_convert.pyo
-  /usr/share/exaile/xl/covers.py
-  /usr/share/exaile/xl/covers.pyc
-  /usr/share/exaile/xl/covers.pyo
-  /usr/share/exaile/xl/db.py
-  /usr/share/exaile/xl/db.pyc
-  /usr/share/exaile/xl/db.pyo
-  /usr/share/exaile/xl/dbusinterface.py
-  /usr/share/exaile/xl/dbusinterface.pyc
-  /usr/share/exaile/xl/dbusinterface.pyo
-  /usr/share/exaile/xl/equalizer.py
-  /usr/share/exaile/xl/equalizer.pyc
-  /usr/share/exaile/xl/equalizer.pyo
-  /usr/share/exaile/xl/filtergui.py
-  /usr/share/exaile/xl/filtergui.pyc
-  /usr/share/exaile/xl/filtergui.pyo
-  /usr/share/exaile/xl/media/__init__.py
-  /usr/share/exaile/xl/media/__init__.pyc
-  /usr/share/exaile/xl/media/__init__.pyo
-  /usr/share/exaile/xl/media/flac.py
-  /usr/share/exaile/xl/media/flac.pyc
-  /usr/share/exaile/xl/media/flac.pyo
-  /usr/share/exaile/xl/media/mp3.py
-  /usr/share/exaile/xl/media/mp3.pyc
-  /usr/share/exaile/xl/media/mp3.pyo
-  /usr/share/exaile/xl/media/mp4.py
-  /usr/share/exaile/xl/media/mp4.pyc
-  /usr/share/exaile/xl/media/mp4.pyo
-  /usr/share/exaile/xl/media/mpc.py
-  /usr/share/exaile/xl/media/mpc.pyc
-  /usr/share/exaile/xl/media/mpc.pyo
-  /usr/share/exaile/xl/media/ogg.py
-  /usr/share/exaile/xl/media/ogg.pyc
-  /usr/share/exaile/xl/media/ogg.pyo
-  /usr/share/exaile/xl/media/wav.py
-  /usr/share/exaile/xl/media/wav.pyc
-  /usr/share/exaile/xl/media/wav.pyo
-  /usr/share/exaile/xl/media/wma.py
-  /usr/share/exaile/xl/media/wma.pyc
-  /usr/share/exaile/xl/media/wma.pyo
-  /usr/share/exaile/xl/mozembed.py
-  /usr/share/exaile/xl/mozembed.pyc
-  /usr/share/exaile/xl/mozembed.pyo
-  /usr/share/exaile/xl/panels.py
-  /usr/share/exaile/xl/panels.pyc
-  /usr/share/exaile/xl/panels.pyo
-  /usr/share/exaile/xl/player.py
-  /usr/share/exaile/xl/player.pyc
-  /usr/share/exaile/xl/player.pyo
-  /usr/share/exaile/xl/prefs.py
-  /usr/share/exaile/xl/prefs.pyc
-  /usr/share/exaile/xl/prefs.pyo
-  /usr/share/exaile/xl/track.py
-  /usr/share/exaile/xl/track.pyc
-  /usr/share/exaile/xl/track.pyo
-  /usr/share/exaile/xl/tracks.py
-  /usr/share/exaile/xl/tracks.pyc
-  /usr/share/exaile/xl/tracks.pyo
-  /usr/share/exaile/xl/trackslist.py
-  /usr/share/exaile/xl/trackslist.pyc
-  /usr/share/exaile/xl/trackslist.pyo
-  /usr/share/exaile/xl/xlmisc.py
-  /usr/share/exaile/xl/xlmisc.pyc
-  /usr/share/exaile/xl/xlmisc.pyo
+  /usr/share/exaile/xl/plugins/plugins.glade
   /usr/share/locale/ca/LC_MESSAGES/exaile.mo
   /usr/share/locale/cs/LC_MESSAGES/exaile.mo
+  /usr/share/locale/da/LC_MESSAGES/exaile.mo
   /usr/share/locale/de/LC_MESSAGES/exaile.mo
   /usr/share/locale/en_GB/LC_MESSAGES/exaile.mo
   /usr/share/locale/es_AR/LC_MESSAGES/exaile.mo
@@ -214,6 +257,7 @@ Files included in the binary package:
   /usr/share/locale/fr/LC_MESSAGES/exaile.mo
   /usr/share/locale/he_IL/LC_MESSAGES/exaile.mo
   /usr/share/locale/hu/LC_MESSAGES/exaile.mo
+  /usr/share/locale/it/LC_MESSAGES/exaile.mo
   /usr/share/locale/it_IT/LC_MESSAGES/exaile.mo
   /usr/share/locale/nn/LC_MESSAGES/exaile.mo
   /usr/share/locale/pa/LC_MESSAGES/exaile.mo
@@ -221,6 +265,8 @@ Files included in the binary package:
   /usr/share/locale/pt_BR/LC_MESSAGES/exaile.mo
   /usr/share/locale/ro/LC_MESSAGES/exaile.mo
   /usr/share/locale/ru/LC_MESSAGES/exaile.mo
+  /usr/share/locale/sr/LC_MESSAGES/exaile.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/exaile.mo
   /usr/share/locale/sv/LC_MESSAGES/exaile.mo
   /usr/share/locale/tr_TR/LC_MESSAGES/exaile.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/exaile.mo
@@ -231,6 +277,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.11-1 -----
+Version bump.
 
 ----- version 0.2.10-1 -----
 Initial release for Cygwin.
