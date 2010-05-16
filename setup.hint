@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-oss python python-beautifulsoup python-cairo python-cddb python-chardet python-dbus python-gobject2.0 python-gst0.10 python-gtk2.0 python-mutagen python-pil python-pynotify python-webkit
+requires: gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-oss python python-beautifulsoup python-cairo python-cddb python-chardet python-dbus python-gobject2.0 python-gst0.10 python-gtk2.0 python-mutagen python-pil python-pynotify python-webkit moodbar streamripper
 sdesc: "GTK+ music player similar to AmaroK"
 ldesc: "Exaile is a music player aiming to be similar to KDE's Amarok, 
 but for GTK+ and written in Python. It incorporates many of the cool 

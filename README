@@ -25,6 +25,9 @@ Runtime requirements:
   python-pil-1.1.7-2
   python-pynotify-0.1.1-3
   python-webkit-1.1.7-2
+  moodbar
+  quodlibet
+  streamripper
 
 Build requirements:
   cygwin-1.7.0-62
