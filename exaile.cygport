@@ -1,9 +1,9 @@
 inherit python
 
 NAME="exaile"
-VERSION=3.3.1
+VERSION=3.4.5
 RELEASE=1
-CATEGORY="Audio GNOME"
+CATEGORY="Audio"
 SUMMARY="GTK+ music player similar to AmaroK"
 DESCRIPTION="Exaile is a music player aiming to be similar to KDE's Amarok, but
 for GTK+ and written in Python. It incorporates many of the cool things from
@@ -11,9 +11,11 @@ Amarok (and other media players) like automatic fetching of album art, handling
 of large libraries, lyrics fetching, artist/album information via Wikipedia,
 Last.fm submission support, and optional iPod support via a plugin."
 HOMEPAGE="http://www.exaile.org/"
-SRC_URI="http://launchpad.net/exaile/${PV[1]}.${PV[2]}.x/${PV}/+download/${P}.tar.gz"
+SRC_URI="https://github.com/exaile/exaile/archive/${VERSION}/exaile-${VERSION}.tar.gz"
 
-REQUIRES="gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-oss moodbar streamripper"
+ARCH=noarch
+
+REQUIRES="gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-flac gstreamer0.10-plugins-musepack gstreamer0.10-plugins-vorbis moodbar streamripper"
 
 src_compile() { :; }
 
