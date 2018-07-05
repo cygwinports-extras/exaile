@@ -2,7 +2,7 @@ inherit python2
 
 NAME="exaile"
 VERSION=4.0.0
-RELEASE=0.1.beta1
+RELEASE=0.2.beta3
 CATEGORY="Audio"
 SUMMARY="GTK+ music player similar to AmaroK"
 DESCRIPTION="Exaile is a music player aiming to be similar to KDE's Amarok, but
@@ -17,9 +17,14 @@ SRC_DIR="exaile-${VERSION}${RELEASE##*.}"
 ARCH=noarch
 
 # moodbar: gstreamer-0.10
-REQUIRES="girepository-Gtk3.0 girepository-GIRepository1.0 girepository-Gst1.0 girepository-GstInterfaces1.0 girepository-Keybinder3.0 girepository-Notify0.7 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-free gstreamer1.0-plugins-ugly-free python2-bs4 python2-ipython streamripper"
+REQUIRES="girepository-Gtk3.0 girepository-GIRepository1.0 girepository-Gst1.0 girepository-GstInterfaces1.0 girepository-Keybinder3.0 girepository-Notify0.7 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-free gstreamer1.0-plugins-ugly-free python2-bs4 python-gst1.0 python2-ipython python2-lxml streamripper"
 
-src_compile() { :; }
+DIFF_EXCLUDES="build po"
+
+src_compile() {
+	cd ${S}
+	cygmake
+}
 
 src_install() {
 	cd ${S}
